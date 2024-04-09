@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>gestion de panier</title>
+    </head>
+
+    <body>
+        
+        <main id="app">
+            <section class="items">
+              
+                <h4>Choisissez vos produits</h4>
+                <!-- Afficher les produits -->
+                <div v-on:click="ToggleEvent(produit)"  v-for="produit in prod" :key="produit.id" v-bind:class="[{selected: produit.active},'product'] " >
+                    <div class="photo">
+                        <img v-bind:src="produit.image">
+                    </div>
+                    <div  class="description">
+                        <span class="name">{{produit.name}}</span>
+                        <span class="price">{{produit.price}}</span>
+
+                        <div class="quantity-area" >
+                            <template v-if="produit.active">
+                            <button v-on:click.stop="produit.quantity--" v-bind ="decrement(produit)">-</button>
+                            <span>{{produit.quantity}}</span>
+                            <button v-on:click.stop="produit.quantity++" >+</button>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+<!-- afficher la section qui affiche la liste des produits au panier -->
+            <section class="summary " >
+                <strong>Panier</strong>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produits</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Afficher tous les produits actifs -->
+                        
+                        <tr   v-for="produit in prod"  >
+                            <template v-if="produit.active" >
+                                <td >{{produit.name +'x'+produit.quantity}}</td>
+                                <td >{{totalProduits(produit)}}</td>
+                            </template>
+                        </tr>
+                    
+                        
+                        <tr >
+                            <th>Total</th>
+                            <th >{{ totalTotal()}}</th>
+                        </tr>
+                    
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>

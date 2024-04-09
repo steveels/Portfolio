@@ -1,0 +1,465 @@
+
+@import url(‘https://fonts.googleapis.com/css2?family=VT323&display=swap’);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'VT323', monospace;
+    
+}
+body{
+    background-color: #020202;
+    background: url(./Pictures/stars-964022_1920.png)center/cover;
+    width: 100%;
+    
+   
+}
+nav{
+    max-width: 1100px;
+    width: 90%;
+    margin: 10px auto;  
+    
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    justify-content: flex-end;
+    gap: 55px;
+   
+    
+}
+li{
+    cursor: pointer;
+    color:#05e147 ;
+    position: relative;
+    
+}
+a{
+    color: #05e147;
+}
+
+li:hover:after{
+    content: "";
+    background: white;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    transform: translateX(0%) scaleX(0);
+    animation: trait 0.2s ease-in-out forwards;
+    display: flex;
+    transform-origin: center;
+}
+@keyframes trait{
+    to{
+        transform: translateX(0%)  scaleX(1);
+    }
+}
+
+.container{
+    max-width: 1300px;
+    width: 90%;
+    margin: 130px auto;
+    display: flex;
+    
+
+}
+
+.boxPresentation{
+    height: 500px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    
+   
+}
+.reseaux {
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+}
+
+.mail{
+    border: #05e147 1px solid;
+    color:white ;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.boxPresentation p{
+ 
+  color: #05e147;
+  filter: drop-shadow(0 0 2px #e4d808);
+  margin-bottom: 20px;
+}
+.boxPresentation h1{
+ 
+   font-size: 30px;
+   margin-bottom: 20px;
+   text-align: center;
+}
+
+.auto-type{
+    color:#05e147 ;
+    filter: drop-shadow(0 0 2px #e4d808);
+    font-size: 50px;
+}
+.boxPresentation a {
+    
+    border: #05e147 1px solid;
+    color:white ;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    
+}
+
+
+.boxpicture{
+    height: 530px;
+    max-width: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: url(./Pictures/matrix-2953869_1920.jpg)center/cover;
+    opacity: 0.8;
+    border-radius: 50%;
+
+    
+    
+}
+.turn{
+    height: 500px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 0 8px #b6cfbe );
+    border-radius: 50%;
+   
+
+}
+
+.moi{
+    height: 600px;
+    width: 100%;
+    background: url(./Pictures/1708714841350-removebg-preview.png) center/cover;
+    animation: moi 2.5s infinite steps(1);
+    
+    
+   
+  
+}
+
+.containerProjet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+
+}
+.containerProjet h2{
+    color: white;
+    text-align: center;
+  
+
+}
+.cont2{
+    max-width: 1300px;
+    width: 95%;
+    height: 500px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border: 1px solid #b6cfbe;
+    box-shadow: 0 0 10px #b6cfbe;
+   
+    
+   
+}
+.boxprojet{
+    width: 350px;
+    height: 300px;  
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+.boxprojet h3{
+    color:white;
+    margin-bottom: 8px;
+}
+.boxprojet a{
+    color:white;
+    margin-top: 10px;
+    border: 1px solid #05e147;
+    border-radius: 50px;
+    width: 180px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+      
+}
+.boxprojet:hover{
+    transform: scale(1.1,1.1);
+    transition: 0.3s;
+
+}
+
+.Burger{
+    margin-bottom: 10px;
+    height: 90%;
+    width: 90%;
+    border-radius: 5px;
+    background: url(./Pictures/ProjetBurgers.png)center/cover;
+}
+.Categories{
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 90%;
+    width: 90%;
+    background: url(./Pictures/ProjetCategories.png)center/cover;
+}
+.Kyoto{
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 90%;
+    width: 90%;
+    background: url(./Pictures/ProjetCss.png)center/cover;
+  
+}
+
+
+
+.containerPresentation{
+    
+    width: 100%;
+    color: rgba(255, 255, 255, 0.692);
+    margin: 50px auto;
+    display: flex;
+    align-items: end;
+
+    
+    
+}
+h2{
+ margin-bottom: 20px;
+ margin-top: 15px;
+}
+.boxApropos{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    width: 65%;
+    height: auto;
+    margin-left: 80px;
+    padding: 20px;
+    line-height: 35px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.068);
+  
+}
+.cont{
+    display: flex;
+}
+.centrerP{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.centrerP p{
+    margin-bottom: 8px;
+}
+.containerCompetences{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    border: 1px solid #b6cfbe;
+    box-shadow: 0 0 10px #b6cfbe;
+   
+    
+}
+.mesCompetences{
+    max-width: 1100px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 55px auto;
+    
+}
+
+.box{
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #05e147;
+    box-shadow: 0 0 10px #05e147;
+    
+}
+.box h4{
+    margin-bottom: 20px;
+    margin-top: 5px;
+    color: #658131;
+    
+}
+
+.containerTechniqueSkills{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border: 1px solid #b6cfbe;
+    box-shadow: 0 0 10px #b6cfbe;
+    color: white;
+}
+.containerTech{
+    width: 90%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    margin: 55px auto;
+    justify-content: space-around;
+    
+  
+}
+
+.boxTechno{
+    align-items:center;
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #05e147;
+    box-shadow: 0 0 10px #05e147;
+    
+    
+}
+.boxTechno h4{
+    margin-bottom: 20px;
+    margin-top: 5px;
+    color: #658131;
+}
+.centrerCube{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 8px;
+}
+.centrerCube i {
+    margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1043px) {
+
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .boxPresentation{
+        width: 100%;
+    }
+    .containerTech{
+        display: flex ;
+        justify-content: center;
+        gap: 25px;
+    }
+    .mesCompetences{
+        display: flex ;
+        justify-content: center;
+        gap: 25px;
+        width: 90% ;
+    }
+   
+}
+
+@media screen and (max-width: 768px) {
+    .cont2{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 25px;
+    }
+    .boxprojet:hover{
+       transform: none;
+       
+    
+    }
+    .boxApropos{
+        width: 80%;
+    }
+
+    
+}
+@media screen and ( max-width: 718px){
+    .mesCompetences{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .containerTech{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    
+}
+@media screen and ( max-width: 534px){
+    ul{
+        display: flex;
+        justify-content: center;
+    }
+    .boxPresentation h1{
+       font-size: 20px;
+        
+    }
+     .auto-type {
+        font-size: 35px;
+    }
+    .boxApropos{
+       
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+    }
+ 
+    
+}
+
+
+  
+
+
+
+
+

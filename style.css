@@ -215,8 +215,10 @@ li:hover:after{
     display: flex;
     align-items: center;
     justify-content: center;
-    
-      
+}
+.boxprojet a:hover{
+    background-color: #05e147;
+    transition: 0.3s;
 }
 .boxprojet:hover{
     transform: scale(1.1,1.1);
@@ -243,7 +245,7 @@ li:hover:after{
     margin-bottom: 10px;
     height: 90%;
     width: 90%;
-    background: url(./Pictures/ProjetCss.png)center/cover;
+    background: url(./Pictures/image.png)center/cover;
   
 }
 
@@ -278,6 +280,7 @@ h2{
 }
 .cont{
     display: flex;
+   
 }
 .centrerP{
     text-align: left;
@@ -287,7 +290,7 @@ h2{
     
 }
 .centrerP p{
-    margin-bottom: 8px;
+    margin-bottom: 7px;
 }
 .containerCompetences{
     width: 90%;
@@ -368,9 +371,12 @@ h2{
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
     margin-right: 8px;
 }
+.centrerCube img{
+    margin-top: 7px;
+}
+
 .centrerCube i {
     margin-bottom: 8px;
 }
